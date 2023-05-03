@@ -173,3 +173,60 @@ Los componentes de clase, por otro lado, son clases de JavaScript que heredan de
 Una vez definido un componente en React, se puede utilizar en cualquier lugar donde se necesite en la interfaz de usuario. Para utilizar un componente, simplemente se invoca en otro componente utilizando su nombre y pasándole cualquier propiedad necesaria. Los componentes también se pueden anidar para construir interfaces de usuario complejas.
 
 En resumen, un componente en React es una pieza de código que define una parte de la interfaz de usuario. Los componentes pueden ser funciones o clases que devuelven un elemento de React y se pueden utilizar en cualquier lugar donde se necesiten en la interfaz de usuario. Los componentes tienen su propio estado y propiedades, y se pueden anidar para construir interfaces de usuario complejas.
+
+
+
+<!-- ------------------------------------------------------ -->
+
+
+
+// Manejo del estado en React
+El manejo del estado en React se refiere a la forma en que los componentes de una aplicación de React manejan y actualizan los datos que controlan su comportamiento y su aspecto. El estado en React es un objeto JavaScript que contiene datos que pueden ser actualizados y que se utilizan para renderizar la interfaz de usuario.
+
+El estado en React se puede definir en un componente de dos maneras principales: como una propiedad de la clase en un componente de clase, o como una constante en un componente funcional. En ambos casos, el estado se define utilizando el método useState de React.
+
+El método useState devuelve una matriz con dos elementos: el primer elemento es el estado actual y el segundo elemento es una función para actualizar el estado. Para actualizar el estado, se llama a esta función con el nuevo valor del estado.
+
+Por ejemplo, si quisieras definir un estado en un componente de clase, podrías hacerlo de la siguiente manera:
+
+import React, { Component } from 'react';
+
+class MyComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Contador: {this.state.count}</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>Aumentar contador</button>
+      </div>
+    );
+  }
+}
+
+En este ejemplo, el componente de clase MyComponent tiene un estado que incluye un valor de count inicializado en 0. El método render del componente utiliza el valor de count para renderizar un párrafo que muestra el valor actual del contador y un botón que incrementa el contador cuando se hace clic en él. Para actualizar el estado, se llama al método setState con un nuevo objeto de estado que incluye el nuevo valor del contador.
+
+El manejo del estado en React es importante para mantener la coherencia entre los datos y la interfaz de usuario en una aplicación de React. Cuando se actualiza el estado de un componente, React se encarga de volver a renderizar automáticamente el componente y sus componentes hijos, lo que garantiza que la interfaz de usuario refleje siempre el estado actual de la aplicación.
+
+
+
+<!-- ------------------------------------------------------ -->
+
+
+// Qué es Angular y cómo se construyó
+Angular es un framework de JavaScript desarrollado por Google para construir aplicaciones web de una sola página (SPA) y aplicaciones móviles híbridas. Fue lanzado inicialmente en 2010 como AngularJS y se reescribió por completo como Angular en 2016.
+
+Angular se construyó utilizando TypeScript, un superconjunto de JavaScript que agrega características adicionales, como tipos de datos estáticos y programación orientada a objetos, para mejorar la legibilidad y la mantenibilidad del código. También utiliza una arquitectura basada en componentes, en la que los componentes representan elementos de la interfaz de usuario y se comunican entre sí a través de una jerarquía de componentes.
+
+Además de los componentes, Angular también incluye una serie de características útiles, como enrutamiento, formularios reactivos, inyección de dependencias, animaciones y mucho más. Estas características se proporcionan a través de módulos, que son bloques de funcionalidad que se pueden importar y utilizar en una aplicación de Angular.
+
+Angular también se beneficia de una gran comunidad de desarrolladores y una amplia gama de bibliotecas y herramientas complementarias. Algunas de estas bibliotecas y herramientas incluyen RxJS para la programación reactiva, Angular Material para la creación de interfaces de usuario, y Angular CLI para la creación y gestión de proyectos de Angular.
+
+En resumen, Angular es un framework de JavaScript desarrollado por Google que se utiliza para crear aplicaciones web de una sola página y aplicaciones móviles híbridas. Se construyó utilizando TypeScript y se basa en una arquitectura de componentes. Ofrece una amplia variedad de características y bibliotecas complementarias, y cuenta con una gran comunidad de desarrolladores.
+
+
+
+<!-- ------------------------------------------------------ -->
