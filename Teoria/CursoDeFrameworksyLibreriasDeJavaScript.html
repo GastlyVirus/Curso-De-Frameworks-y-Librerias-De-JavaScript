@@ -470,6 +470,37 @@ Además, Vue proporciona una API completa y extensible que permite realizar tare
 
 En resumen, Vue es un framework progresivo de JavaScript que se utiliza para construir interfaces de usuario interactivas en aplicaciones web de una sola página. Se basa en los conceptos de reactividad y componentes, y se construyó utilizando HTML, CSS y JavaScript. Su enfoque incremental y su arquitectura basada en componentes lo hacen flexible y fácil de adoptar en proyectos existentes.
 
+<!-- // Trabajando con Vue Components -->
+Los Vue components son bloques reutilizables y autónomos en Vue.js que encapsulan tanto la estructura HTML como el comportamiento JavaScript asociado. En Vue.js, los componentes son la unidad fundamental para construir interfaces de usuario.
+
+Un componente en Vue.js se define como un objeto que contiene opciones y configuraciones. Estas opciones incluyen la plantilla HTML, la lógica JavaScript y los estilos CSS relacionados con el componente. Cada componente puede tener su propio estado y ciclo de vida.
+
+Los componentes en Vue.js ofrecen varias ventajas:
+
+Reutilización: Los componentes permiten crear bloques de código reutilizables. Pueden ser utilizados múltiples veces en diferentes partes de una aplicación, lo que facilita el mantenimiento y la escalabilidad.
+
+Encapsulación: Los componentes encapsulan tanto la estructura HTML como el comportamiento JavaScript relacionado. Esto evita el conflicto y la interferencia con otros componentes y simplifica la organización del código.
+
+Composición: Los componentes en Vue.js se pueden combinar y anidar para construir interfaces de usuario complejas. Puedes construir componentes más grandes utilizando componentes más pequeños, lo que facilita la construcción de interfaces modulares y fáciles de mantener.
+
+Comunicación: Los componentes en Vue.js pueden comunicarse entre sí a través de la emisión y escucha de eventos. Esto permite la interacción y el intercambio de datos entre componentes hermanos o componentes padres e hijos.
+
+La sintaxis para definir un componente en Vue.js es la siguiente:
+
+Vue.component('nombre-componente', {
+  // Opciones y configuraciones del componente
+});
+
+También se pueden definir componentes utilizando la sintaxis de archivo único en Vue, donde el HTML, el JavaScript y el CSS del componente se encuentran en un solo archivo.
+
+Una vez que se ha definido un componente, se puede utilizar en el HTML utilizando su nombre de etiqueta personalizado. Por ejemplo:
+
+<nombre-componente></nombre-componente>
+
+Dentro de un componente, se puede acceder al estado y las propiedades utilizando la palabra clave this, y se pueden definir métodos y lógica específica para ese componente.
+
+En resumen, los componentes en Vue.js son bloques reutilizables y autónomos que encapsulan la estructura HTML y el comportamiento JavaScript. Permiten la reutilización, encapsulación, composición y comunicación entre diferentes partes de una aplicación Vue.js. Los componentes son una parte fundamental para construir interfaces de usuario modulares y escalables.
+
 https://codesandbox.io/s/vue-peliculas-zcf8e3 form https://codesandbox.io/
 
 
@@ -518,3 +549,24 @@ https://codesandbox.io/s/svelte-movies-70mhzh from https://codesandbox.io/
 
 
 // Qué es CSS-in-JS
+CSS-in-JS es un enfoque para escribir estilos en JavaScript en lugar de archivos de hojas de estilo separados en CSS. Combina el poder y la flexibilidad de JavaScript con la sintaxis y las capacidades de CSS para estilizar componentes y elementos de la interfaz de usuario.
+
+La idea principal detrás de CSS-in-JS es que los estilos y los componentes están estrechamente acoplados. En lugar de escribir estilos en un archivo CSS externo y referenciarlos en el HTML, los estilos se definen directamente en el código JavaScript que define los componentes. Esto tiene varias ventajas:
+
+Encapsulación de estilos: Los estilos definidos en CSS-in-JS se aplican solo a los componentes específicos a los que están asociados. Esto evita la propagación de estilos no deseados y los conflictos entre diferentes componentes.
+
+Reutilización de estilos: Los estilos pueden ser reutilizados fácilmente en varios componentes o incluso en diferentes proyectos, ya que están definidos como funciones o variables en JavaScript.
+
+Dinamismo: Al escribir estilos en JavaScript, se pueden utilizar variables, lógica condicional y funciones para calcular y aplicar estilos dinámicamente en función del estado o las propiedades de los componentes.
+
+Resolución de nombres: Con CSS-in-JS, no hay necesidad de preocuparse por las clases CSS únicas y la posibilidad de conflictos de nombres. Los nombres de clase se generan automáticamente o se generan de forma única para cada componente.
+
+Existen varias bibliotecas y herramientas populares que implementan el enfoque CSS-in-JS, como Styled Components, Emotion, CSS Modules, entre otros. Cada una de estas bibliotecas tiene su propia sintaxis y características, pero todas comparten el concepto de definir estilos en JavaScript.
+
+En resumen, CSS-in-JS es un enfoque para escribir estilos en JavaScript en lugar de archivos de hojas de estilo separados en CSS. Permite una mayor encapsulación, reutilización y dinamismo en los estilos de los componentes de la interfaz de usuario. Algunas bibliotecas populares de CSS-in-JS incluyen Styled Components y Emotion.
+
+
+
+<!-- ------------------------------------------------------ -->
+
+
