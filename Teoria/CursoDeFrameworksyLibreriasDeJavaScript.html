@@ -570,3 +570,16 @@ En resumen, CSS-in-JS es un enfoque para escribir estilos en JavaScript en lugar
 <!-- ------------------------------------------------------ -->
 
 
+
+// Tipos de aplicaciones según su router: SPAs vs. SSR
+Una aplicación SPA es aquella en la que el contenido se carga una vez, generalmente al cargar la página inicial, y luego se actualiza de forma dinámica sin necesidad de recargar la página completa. Esto significa que el enrutamiento de una SPA se realiza en el lado del cliente, es decir, en el navegador web. Cuando el usuario navega por diferentes secciones o páginas dentro de una SPA, el enrutamiento se gestiona internamente en el lado del cliente, sin hacer peticiones al servidor para cargar nuevas páginas completas. En cambio, solo se solicitan los datos necesarios y se actualiza la interfaz de usuario.
+
+Por otro lado, SSR se refiere a la técnica de renderizado en el lado del servidor. En una aplicación SSR, cada vez que el usuario solicita una página, el servidor genera la página completa con todos los datos necesarios y la envía al navegador para su visualización. Esto significa que el enrutamiento se realiza en el lado del servidor. Cuando el usuario navega a una nueva página, se realiza una nueva solicitud al servidor y se obtiene una página completa recién renderizada.
+
+En resumen, la diferencia clave entre SPAs y SSR en cuanto al enrutamiento es que en las SPAs el enrutamiento se realiza en el lado del cliente, mientras que en SSR se realiza en el lado del servidor. Las SPAs cargan el contenido inicial una vez y actualizan dinámicamente la interfaz de usuario, mientras que las aplicaciones SSR generan y envían páginas completas desde el servidor en cada solicitud.
+
+Ambos enfoques tienen ventajas y desventajas dependiendo de las necesidades del proyecto. Las SPAs suelen ofrecer una experiencia de usuario más fluida y rápida después de la carga inicial, ya que solo se solicitan los datos necesarios para actualizar la interfaz. Por otro lado, las aplicaciones SSR pueden ofrecer mejor SEO (optimización para motores de búsqueda) y tiempos de carga más rápidos para la primera visita, ya que las páginas se generan completamente en el servidor.
+
+
+
+<!-- ------------------------------------------------------ -->
